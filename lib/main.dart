@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           Container(
             margin: EdgeInsets.only(bottom: 3.0),
-            height: 70,
+            height: 72,
             color: Colors.lightBlueAccent,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
