@@ -3,6 +3,7 @@ import 'package:fourinlinegame/showToast.dart';
 
 String gameTitle = '4 In Line Game';
 String chseAnthrRowCntn = 'Choose Another Row To Continue';
+String notYrTurn = 'Not Your Turn';
 
 void main() {
   runApp(MyApp());
@@ -125,7 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     if (playerTurn == false) {
                       setDiskToPosition(playerTurn);
                     } else {
-                      showToast("Not Your Turn");
+                      showToast(notYrTurn);
                     }
                   },
                   child: Container(
