@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fourinlinegame/showToast.dart';
 
+String gameTitle = '4 In Line Game';
+
 void main() {
   runApp(MyApp());
 }
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: '4 In Line Game'),
+      home: MyHomePage(title: gameTitle),
     );
   }
 }
