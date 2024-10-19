@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:fourinlinegame/showToast.dart';
 
 String gameTitle = '4 In Line Game';
+String chseAnthrRowCntn = 'Choose Another Row To Continue';
+String notYrTurn = 'Not Your Turn';
 
 void main() {
   runApp(MyApp());
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: '4 In Line Game',
+      title: gameTitle,
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
@@ -124,7 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     if (playerTurn == false) {
                       setDiskToPosition(playerTurn);
                     } else {
-                      showToast("Not Your Turn");
+                      showToast(notYrTurn);
                     }
                   },
                   child: Container(
@@ -408,7 +410,7 @@ class _MyHomePageState extends State<MyHomePage> {
     if (isBreak) {
       this.playerTurn = !playerTurn;
     } else {
-      showToast("Choose Another Row To Continue");
+      showToast(chseAnthrRowCntn);
     }
   }
 }
