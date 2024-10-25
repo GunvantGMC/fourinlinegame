@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
+final defaultToastFontSize = 16.0; 
+
 void showToast(String msg) {
   Fluttertoast.showToast(
       msg: msg,
@@ -9,5 +11,6 @@ void showToast(String msg) {
       timeInSecForIosWeb: 3,
       backgroundColor: Colors.red,
       textColor: Colors.white,
-      fontSize: 16.0);
+      fontSize: defaultToastFontSize,
+  );
 }
