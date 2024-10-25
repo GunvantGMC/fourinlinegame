@@ -5,6 +5,9 @@ String gameTitle = '4 In Line Game';
 String chseAnthrRowCntn = 'Choose Another Row To Continue';
 String notYrTurn = 'Not Your Turn';
 
+final bPlayImagePath = "assets/bplayer.png";
+final gPlayImagePath = "assets/gplayer.png";
+
 void main() {
   runApp(MyApp());
 }
@@ -133,7 +136,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     //alignment: FractionalOffset.center,
                     width: 75,
                     height: 75,
-                    child: Image.asset("assets/bplayer.png"),
+                    child: Image.asset(bPlayImagePath),
                     decoration: BoxDecoration(shape: BoxShape.circle),
                   ),
                 ),
@@ -305,7 +308,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Container(
                     width: 75,
                     height: 75,
-                    child: Image.asset("assets/gplayer.png"),
+                    child: Image.asset(gPlayImagePath),
                     decoration: BoxDecoration(shape: BoxShape.circle),
                   ),
                 ),
